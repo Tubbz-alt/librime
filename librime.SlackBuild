@@ -91,6 +91,12 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-rime-$VERSION
+if [ ! -f $CWD/$PRGNAM-rime-$VERSION.tar.gz ]; then
+    echo 'source code not found.'
+    echo 'using `wget https://github.com/rime/librime/archive/rime-1.2.9.tar.gz` downlaod it.'
+    exit -1
+fi
+
 tar xvf $CWD/$PRGNAM-rime-$VERSION.tar.gz
 cd $PRGNAM-rime-$VERSION
 chown -R root:root .
