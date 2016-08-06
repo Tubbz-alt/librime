@@ -17,6 +17,7 @@ rimes with your keystrokes.
 You need download leveldb source code from [github](https://github.com/google/leveldb/archive/v1.9.tar.gz)
 
 Just like that
+
 ```
 wget https://github.com/google/leveldb/archive/v1.9.tar.gz
 tar xf v1.9.tar.gz
@@ -32,9 +33,9 @@ sudo sh leveldb.SlackBuild
 ## usage
 
 ```
-wget https://github.com/rime/librime/archive/rime-1.2.9.tar.gz
-git clone https://github.com/slackwarecn/librime-slackbuild
-cd ../librime-slackbuild
-ln -s ../librime-1.2.9.tar.gz .
-sudo sh librime-slackbuild
+git clone https://github.com/slackwarecn-slackbuilds/librime-slackbuild.git
+cd librime-slackbuild
+source librime-slackbuild.info
+wget $DOWNLOAD
+./librime-slackbuild
 ```
